@@ -14,7 +14,7 @@ const navLinks = [{
   name: "Services",
   path: "/services"
 }, {
-  name: "Funding247",
+  name: "Funding247.online",
   path: "/funding247"
 }, {
   name: "Contact",
