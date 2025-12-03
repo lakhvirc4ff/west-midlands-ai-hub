@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   Mail,
-  Phone,
   MapPin,
   Clock,
   Send,
@@ -19,12 +18,6 @@ const contactInfo = [
     icon: MapPin,
     title: "Address",
     content: "West Midlands, United Kingdom",
-  },
-  {
-    icon: Phone,
-    title: "Phone",
-    content: "+44 (0) 123 456 7890",
-    href: "tel:+441234567890",
   },
   {
     icon: Mail,
