@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Linkedin, Twitter } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export function Footer() {
@@ -80,15 +80,6 @@ export function Footer() {
                 <span className="text-muted-foreground text-sm">
                   West Midlands, United Kingdom
                 </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary shrink-0" />
-                <a
-                  href="tel:+441onal"
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
-                  +44 (0) 123 456 7890
-                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
