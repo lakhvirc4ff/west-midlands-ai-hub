@@ -220,25 +220,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <SectionHeading
-            badge="Testimonials"
-            title="Trusted by SMEs Across the UK"
-            description="See what our clients say about working with us."
-          />
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                {...testimonial}
-                className="animate-fade-up"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Sectors */}
       <section className="py-24">
