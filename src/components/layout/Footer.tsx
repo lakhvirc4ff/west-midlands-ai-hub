@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Linkedin, Twitter } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 export function Footer() {
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -15,18 +13,10 @@ export function Footer() {
               innovation support across the UK and beyond.
             </p>
             <div className="flex gap-4">
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
@@ -36,16 +26,11 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {["About Us", "Services", "Funding247", "Contact"].map((item) => (
-                <li key={item}>
-                  <Link
-                    to={`/${item.toLowerCase().replace(" ", "")}`}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                  >
+              {["About Us", "Services", "Funding247", "Contact"].map(item => <li key={item}>
+                  <Link to={`/${item.toLowerCase().replace(" ", "")}`} className="text-muted-foreground hover:text-primary transition-colors text-sm">
                     {item}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -53,21 +38,11 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-3">
-              {[
-                "Custom AI Development",
-                "Business Automation",
-                "AI Training",
-                "Funding Support",
-              ].map((item) => (
-                <li key={item}>
-                  <Link
-                    to="/services"
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                  >
+              {["Custom AI Development", "Business Automation", "AI Training", "Funding Support"].map(item => <li key={item}>
+                  <Link to="/services" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                     {item}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -77,16 +52,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-muted-foreground text-sm">
-                  West Midlands, United Kingdom
-                </span>
+                <span className="text-muted-foreground text-sm">9 Gleneagles Road, Coventry, CV23BP, West Midlands, United Kingdom</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a
-                  href="mailto:info@midlandai.co.uk"
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
+                <a href="mailto:info@midlandai.co.uk" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                   info@midlandai.co.uk
                 </a>
               </li>
@@ -101,22 +71,15 @@ export function Footer() {
               Innovation Ltd. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link
-                to="/privacy"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm"
-              >
+              <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 Privacy Policy
               </Link>
-              <Link
-                to="/terms"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm"
-              >
+              <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 Terms of Service
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
