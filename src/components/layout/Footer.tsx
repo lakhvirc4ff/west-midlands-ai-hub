@@ -54,7 +54,8 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-muted-foreground text-sm">West Midlands Centre for AI and Innovation Ltd,
 9 Gleneagles Road,
-Coventry, CV23BP, West Midlands, United Kingdom</span>
+Coventry, CV23BP,
+West Midlands, United Kingdom</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
